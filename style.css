@@ -1,0 +1,165 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f2f2f2; /* Light background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Center text globally */
+}
+
+/* Hero Section */
+header .hero {
+    background: #ffb6c1 url('banner-image.jpg') no-repeat center center/cover; /* Hero image and pink background */
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-image: url(https://i.pinimg.com/564x/10/a0/2e/10a02e5149146e645a56c5cf37e070d3.jpg);
+
+}
+
+header .hero h1 {
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+}
+
+header .hero button {
+    padding: 15px 30px;
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    border-radius: 50px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease;
+}
+
+header .hero button:hover {
+    background-color: #ff4500;
+}
+
+/* Section Styles */
+section {
+    padding: 50px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #ff6347; /* Vibrant heading color */
+    margin-bottom: 40px;
+}
+
+/* Package Grid */
+.package-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.package {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.package:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+}
+
+.package h3 {
+    color: #333;
+    font-size: 1.8rem;
+}
+
+.package p {
+    font-size: 1.2rem;
+}
+
+.package button {
+    background-color: #32cd32;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.package button:hover {
+    background-color: #228b22;
+}
+
+/* Category Styles */
+ul.categories {
+    list-style: none;
+    padding: 0;
+}
+
+ul.categories li {
+    margin: 10px 0;
+}
+
+ul.categories li a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #ff6347;
+    font-weight: bold;
+}
+
+ul.categories li a:hover {
+    text-decoration: underline;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+form label {
+    font-size: 1.2rem;
+}
+
+form select, form textarea, form input {
+    padding: 15px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+form button {
+    background-color: #ff6347;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #ff4500;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}

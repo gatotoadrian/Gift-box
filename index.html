@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift Box Business</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script> <!-- Link to external JavaScript -->
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header>
+        <div class="hero">
+            <h1>Unbox Love, Joy & Celebration</h1>
+            <button onclick="scrollToSection('shop')">Shop Now</button>
+        </div>
+    </header>
+
+    <!-- Shop Section -->
+    <section id="shop">
+        <h2>Shop by Category</h2>
+        <ul class="categories">
+            <li><a href="#" onclick="showCategory('lover-birds')">Lover Birds Packages</a></li>
+            <li><a href="#" onclick="showCategory('graduation')">Graduation Packages</a></li>
+            <li><a href="#" onclick="showCategory('celebration')">Celebration Packages</a></li>
+            <li><a href="#" onclick="showCategory('breakup')">Breakup/Empowerment Packages</a></li>
+            <li><a href="#" onclick="showCategory('custom')">Custom Boxes</a></li>
+        </ul>
+    </section>
+
+    <!-- Featured Packages Section -->
+    <section id="featured-packages">
+        <h2>Featured Packages</h2>
+        <div class="package-grid">
+            <div class="package">
+                <h3>Basic Lover Birds Package</h3>
+                <p>Price: Ksh 4,500 - 6,500</p>
+                <button onclick="showPackageDetails('basic-lover-birds')">View Details</button>
+            </div>
+
+            <div class="package">
+                <h3>Deluxe Lover Birds Package</h3>
+                <p>Price: Ksh 12,000 - 18,000</p>
+                <button onclick="showPackageDetails('deluxe-lover-birds')">View Details</button>
+            </div>
+
+            <div class="package">
+                <h3>Graduation Package</h3>
+                <p>Price: Ksh 5,000 - 8,000</p>
+                <button onclick="showPackageDetails('graduation-package')">View Details</button>
+            </div>
+
+            <div class="package">
+                <h3>Celebration Package</h3>
+                <p>Price: Ksh 6,000 - 9,000</p>
+                <button onclick="showPackageDetails('celebration-package')">View Details</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customization Page -->
+    <section id="customization">
+        <h2>Customize Your Box</h2>
+        <form id="custom-box-form">
+            <label for="flowers">Choose Flowers:</label>
+            <select id="flowers" name="flowers">
+                <option value="roses">Roses</option>
+                <option value="tulips">Tulips</option>
+                <option value="sunflowers">Sunflowers</option>
+            </select>
+
+            <label for="wine">Add Wine/Alcohol:</label>
+            <select id="wine" name="wine">
+                <option value="none">None</option>
+                <option value="red-wine">Red Wine</option>
+                <option value="champagne">Champagne</option>
+            </select>
+
+            <label for="message">Custom Message:</label>
+            <textarea id="message" name="message"></textarea>
+
+            <button type="submit">Create My Box</button>
+        </form>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are a passionate team creating meaningful gift boxes for all occasions. Our mission is to bring joy and love through every unboxing experience.</p>
+    </section>
+
+    <!-- Delivery & Subscription Section -->
+    <section id="delivery">
+        <h2>Delivery & Subscription</h2>
+        <p>We offer local delivery and monthly subscription boxes. Surprise your loved ones every month with our carefully curated gifts.</p>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog">
+        <h2>From Our Blog</h2>
+        <p>Get creative gift ideas and stay updated on the latest trends in gifting!</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Follow us on social media!</p>
+        <p>&copy; 2024 Gift Box Business</p>
+    </footer>
+
+</body>
+</html>
